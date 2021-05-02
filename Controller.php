@@ -1,14 +1,14 @@
 <?php
 
-namespace App\src;
+namespace Kareem\Dominoes;
 
-use App\src\Application;
-use App\src\Middlewares\BaseMiddleware;
+use Kareem\Dominoes\Application;
+use Kareem\Dominoes\Middlewares\BaseMiddleware;
 
 class Controller
 {
   /**
-   * @var App\src\Middlewares\BaseMiddleware[] $middlewares
+   * @var Kareem\Dominoes\Middlewares\BaseMiddleware[] $middlewares
    */
   protected array $middlewares = [];
 
@@ -64,7 +64,7 @@ class Controller
   /**
    * Get $middlewares
    *
-   * @return  App\src\Middlewares\BaseMiddleware[]
+   * @return  Kareem\Dominoes\Middlewares\BaseMiddleware[]
    */
   public function getMiddlewares()
   {

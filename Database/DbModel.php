@@ -1,9 +1,9 @@
 <?php
 
-namespace App\src\Database;
+namespace Kareem\Dominoes\Database;
 
-use App\src\Application;
-use App\src\Model;
+use Kareem\Dominoes\Application;
+use Kareem\Dominoes\Model;
 use PDOStatement;
 
 abstract class DbModel extends Model

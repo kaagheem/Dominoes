@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src\Database;
+namespace Kareem\Dominoes\Database;
 
-use App\src\Application;
+use Kareem\Dominoes\Application;
 use PDO;
 
 

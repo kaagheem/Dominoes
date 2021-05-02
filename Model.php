@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src;
+namespace Kareem\Dominoes;
 
 abstract class Model
 {

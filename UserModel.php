@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src;
+namespace Kareem\Dominoes;
 
-use App\src\Database\DbModel;
+use Kareem\Dominoes\Database\DbModel;
 
 abstract class UserModel extends DbModel
 {

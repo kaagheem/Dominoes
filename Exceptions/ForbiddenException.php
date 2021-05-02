@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\Exceptions;
+namespace Kareem\Dominoes\Exceptions;
 
 use Exception;
 

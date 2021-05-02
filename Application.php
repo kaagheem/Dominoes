@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src;
+namespace Kareem\Dominoes;
 
-use App\src\Database\Database;
+use Kareem\Dominoes\Database\Database;
 use Exception;
 
 class Application

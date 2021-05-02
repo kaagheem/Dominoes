@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src;
+namespace Kareem\Dominoes;
 
-use App\src\Exceptions\NotFoundException;
+use Kareem\Dominoes\Exceptions\NotFoundException;
 
 class Route
 {

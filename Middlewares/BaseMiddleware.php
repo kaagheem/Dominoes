@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\Middlewares;
+namespace Kareem\Dominoes\Middlewares;
 
 abstract class BaseMiddleware
 {

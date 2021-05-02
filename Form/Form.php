@@ -1,8 +1,8 @@
 <?php
 
-namespace App\src\Form;
+namespace Kareem\Dominoes\Form;
 
-use App\src\Model;
+use Kareem\Dominoes\Model;
 
 class Form
 {

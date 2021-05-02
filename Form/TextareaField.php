@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\Form;
+namespace Kareem\Dominoes\Form;
 
 class TextareaField extends BaseField
 {

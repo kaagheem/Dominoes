@@ -1,9 +1,9 @@
 <?php
 
-namespace App\src\Middlewares;
+namespace Kareem\Dominoes\Middlewares;
 
-use App\src\Application;
-use App\src\Exceptions\ForbiddenException;
+use Kareem\Dominoes\Application;
+use Kareem\Dominoes\Exceptions\ForbiddenException;
 
 class AuthMiddleware extends BaseMiddleware
 {
