@@ -7,6 +7,14 @@ use Exception;
 
 class Application
 {
+  const EVENT_BEFORE_REQUEST = 'beforeRequest';
+  const EVENT_AFTER_REQUEST = 'afterRequest';
+
+  /**
+   * @var array $events
+   */
+  public array $events = [];
+
   /**
    * Root path
    * 
@@ -98,6 +106,8 @@ class Application
    */
   public function run(): void
   {
+    $this->triggerEvents(self::EVENT_BEFORE_REQUEST);
+
     try {
       echo $this->route->resovle();
     } catch (Exception $ex) {
@@ -107,16 +117,6 @@ class Application
       ]);
     }
   }
-
-  /**
-   * Get the value of controller
-   *
-   * @return  $controller
-   */
-  // public function getController(): Controller
-  // {
-  //   return $this->controller;
-  // }
 
   /**
    * Set the value of controller
@@ -165,5 +165,34 @@ class Application
   public static function isGuest(): bool
   {
     return !self::$app->user;
+  }
+
+  /**
+   * Assign given callback and event
+   * 
+   * @param string $event
+   * @param mixed $callback
+   * 
+   * @return void
+   */
+  public function on(string $event, mixed $callback): void
+  {
+    $this->events[$event][] = $callback;
+  }
+
+  /**
+   * Fire the callbacks for the given event
+   * 
+   * @param string $event
+   * 
+   * @return void
+   */
+  public function triggerEvents(string $event): void
+  {
+    $callbacks = $this->events[$event] ?? [];
+
+    foreach ($callbacks as $value) {
+      call_user_func($value);
+    }
   }
 }
