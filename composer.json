@@ -1,0 +1,14 @@
+{
+    "name": "kareem/dominoes",
+    "description": "PHP MVC Educational Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kareem Khalfalla",
+            "email": "karimazenn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
